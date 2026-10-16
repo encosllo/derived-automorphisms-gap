@@ -1,6 +1,6 @@
 #!/bin/bash
 # Reproduces all the files in logs/, in 4 parallel processes. Usage: ./run_checks.sh
-# The longest jobs (theorems.g for orders 101-200) take a few hours.
+# The whole run takes about 15 minutes; the longest job is synchronization_294.
 cd "$(dirname "$0")"
 run_job() {
   args="${1%%|*}"; rest="${1#*|}"; script="${rest%%|*}"; name="${rest##*|}"
@@ -14,7 +14,6 @@ nmin:=151;; nmax:=200;; skip:=[192];;|theorems.g|theorems_151-200
 nmin:=101;; nmax:=150;; skip:=[128];;|theorems.g|theorems_101-150
 nmin:=1;; nmax:=100;;|theorems.g|theorems_1-100
 nmax:=120;;|synchronization.g|synchronization_1-120
-|question92.g|question92
 |order192.g|order192
 |table1.g|table1
 |frattini_free.g|frattini_free

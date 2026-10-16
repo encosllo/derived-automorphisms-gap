@@ -11,14 +11,13 @@
 #   Theorem 7.2     D(G) = G  =>  G' nilpotent of class <= 2;
 #                   DAut = Aut  =>  D(G) = G;  D(G) soluble
 #   Theorem 8.1     |DAut(G)| <= |D(G)|^d(G), with divisibility if D <= Phi
-# It also lists the groups with DAut(G) = 1 (Table 1) and the groups with
-# D = Z_2, C_Aut(G') = Aut_cent and DAut <> Aut_cent (Question 9.4).
+# It also lists the groups with DAut(G) = 1 (Table 1).
 #
 # A line "FAIL <tag> [n, i]" is printed for every failure (there are none).
 # Usage:  gap -q -c 'nmin:=1;; nmax:=100;; skip:=[];;' lib.g theorems.g
 if not IsBound(skip) then skip := []; fi;
 ORDERS := Difference([nmin..nmax], skip);
-triv := []; bad := []; q94 := [];
+triv := []; bad := [];
 Fail := function(x) Add(bad, x); Print("FAIL ", x[3], " ", x{[1,2]}, "\n"); end;
 for n in ORDERS do
   for i in [1..NrSmallGroups(n)] do
@@ -31,10 +30,9 @@ for n in ORDERS do
       Fail([n, i, "2.2"]); fi;
     if Size(Intersection(r.DA, r.Inn)) <> Size(D)/Size(Zc) then Fail([n, i, "2.2(Inn)"]); fi;
     if not Displacement(r) then Fail([n, i, "displacement"]); fi;
-    # Theorem 2.9 and Question 9.4
+    # Theorem 2.9
     if D = Zc and r.DA <> r.AC then Fail([n, i, "2.9(1)"]); fi;
     if r.DA = r.AC and not (D = Z2 and r.CD = r.AC) then Fail([n, i, "2.9(2)"]); fi;
-    if D = Z2 and r.CD = r.AC and r.DA <> r.AC then Add(q94, [n, i]); fi;
     # Results of Li and Shen used in the paper; Proposition 7.8
     if (Size(Centralizer(G, Gp)) = 1) <> (Size(D) = 1) then Fail([n, i, "LS 5.3"]); fi;
     if Size(Centre(Gp)) = 1 and D <> Zc then Fail([n, i, "7.8"]); fi;
@@ -50,5 +48,5 @@ for n in ORDERS do
   od;
   Print("order ", n, " done\n");
 od;
-Print("DAUT1 ", triv, "\nQ94 ", q94, "\nFAILURES ", Length(bad), "\nFINAL\n");
+Print("DAUT1 ", triv, "\nFAILURES ", Length(bad), "\nFINAL\n");
 QUIT;

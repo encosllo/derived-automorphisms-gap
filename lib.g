@@ -98,10 +98,3 @@ HomSize := function(A, B)
   od;
   return s;
 end;
-
-# [|DAut(G)|, |P(G)|, P(G) <= DAut(G), |D(G)|].
-TestPow := function(G)
-  local r, PD;
-  r := Data(G); PD := PowOnDer(r);
-  return [Size(r.DA), Size(PD), IsSubgroup(r.DA, PD), Size(r.D)];
-end;
