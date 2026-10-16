@@ -17,24 +17,24 @@ Theorem and section numbers refer to the paper.
 ## Requirements
 
 GAP 4.16 or later, with the SmallGroups library (included in the standard GAP distribution).
-The runs in `logs/` were made with GAP 4.16.1. The shell script needs `bash` and `xargs`.
+The runs in `logs/` were made with GAP 4.16.1. The shell script needs `bash` and `xargs`. All commands are run from the root of the repository.
 
 ## Files
 
 | File | Contents |
 |---|---|
-| `lib.g` | Common functions: the derived subgroups of all subgroups (`DerSubs`), $D(G)$ (`DNorm`), $\mathrm{DAut}(G)$, $\mathrm{Inn}(G)$, $\mathrm{Aut}_{\mathrm{cent}}(G)$, $C_{\mathrm{Aut}(G)}(G')$ and $Z_2(G)$ (`Data`), $\mathcal P(G)$ (`PowOnDer`) and the power automorphisms (`PAutOf`). Must be loaded before the other scripts. |
-| `theorems.g` | Checks Lemma 2.2, Theorem 2.9, Proposition 7.8, Theorem 7.2, Theorem 8.1 and the results of Li and Shen used in the paper for every group of a range of orders. It also lists the groups with $\mathrm{DAut}(G)=1$ (Table 1). |
-| `order192.g` | Groups of order 192 with $\mathrm{DAut}(G)=1$ (Table 1), among those satisfying the necessary conditions of Theorem 3.2 and Corollary 3.3. |
-| `table1.g` | The columns of Table 1 and the remarks after it: $\mathrm{DAut}(G)=1$, $Z(G)$, $G/G'$ and $Z(G)\le G'\cap\Phi(G)$ for the 28 groups. |
-| `example48.g` | Example 4.8: builds the group $E$ of order 54 and checks its claims. |
-| `frattini_free.g` | Section 5: checks Theorem C, Theorem 5.3, Corollary 5.4 and Theorem 5.5 for the Frattini-free groups of order at most 120 (except 64 and 96). |
-| `example_coprime.g` | Example after Corollary 6.6: $\mathrm{DAut}(S_3\times(C_7\rtimes C_3))$. |
-| `direct_powers.g` | Theorem 6.11 and Corollaries 6.12 and 6.13: $\mathrm{DAut}(K^n)$ and $D(K^n)$ for dihedral groups, Frobenius groups, $A_4$ and $S_3$. |
-| `example614.g` | Example 6.14: $K=$ `SmallGroup(100,10)`. |
-| `proposition616.g` | Proposition 6.16: $K=D_{14}\times(C_7\rtimes C_3)=$ `SmallGroup(294,9)`. |
-| `remark83.g` | Remark 8.3: groups attaining the bound of Theorem 8.1. |
-| `synchronization.g` | Exploratory search related to Theorem 6.11 (see below). |
+| `gap/lib.g` | Common functions: the derived subgroups of all subgroups (`DerSubs`), $D(G)$ (`DNorm`), $\mathrm{DAut}(G)$, $\mathrm{Inn}(G)$, $\mathrm{Aut}_{\mathrm{cent}}(G)$, $C_{\mathrm{Aut}(G)}(G')$ and $Z_2(G)$ (`Data`), $\mathcal P(G)$ (`PowOnDer`) and the power automorphisms (`PAutOf`). Must be loaded before the other scripts. |
+| `gap/theorems.g` | Checks Lemma 2.2, Theorem 2.9, Proposition 7.8, Theorem 7.2, Theorem 8.1 and the results of Li and Shen used in the paper for every group of a range of orders. It also lists the groups with $\mathrm{DAut}(G)=1$ (Table 1). |
+| `gap/order192.g` | Groups of order 192 with $\mathrm{DAut}(G)=1$ (Table 1), among those satisfying the necessary conditions of Theorem 3.2 and Corollary 3.3. |
+| `gap/table1.g` | The columns of Table 1 and the remarks after it: $\mathrm{DAut}(G)=1$, $Z(G)$, $G/G'$ and $Z(G)\le G'\cap\Phi(G)$ for the 28 groups. |
+| `gap/example48.g` | Example 4.8: builds the group $E$ of order 54 and checks its claims. |
+| `gap/frattini_free.g` | Section 5: checks Theorem C, Theorem 5.3, Corollary 5.4 and Theorem 5.5 for the Frattini-free groups of order at most 120 (except 64 and 96). |
+| `gap/example_coprime.g` | Example after Corollary 6.6: $\mathrm{DAut}(S_3\times(C_7\rtimes C_3))$. |
+| `gap/direct_powers.g` | Theorem 6.11 and Corollaries 6.12 and 6.13: $\mathrm{DAut}(K^n)$ and $D(K^n)$ for dihedral groups, Frobenius groups, $A_4$ and $S_3$. |
+| `gap/example614.g` | Example 6.14: $K=$ `SmallGroup(100,10)`. |
+| `gap/proposition616.g` | Proposition 6.16: $K=D_{14}\times(C_7\rtimes C_3)=$ `SmallGroup(294,9)`. |
+| `gap/remark83.g` | Remark 8.3: groups attaining the bound of Theorem 8.1. |
+| `gap/synchronization.g` | Exploratory search related to Theorem 6.11 (see below). |
 | `run_checks.sh` | Reproduces all the files in `logs/`. |
 | `logs/` | Output of the runs. |
 
@@ -45,8 +45,8 @@ of orders to omit. `synchronization.g` reads `nmax`, or a list `GROUPS` of Small
 For example:
 
 ```
-gap -q -c 'nmin:=1;; nmax:=100;;' lib.g theorems.g
-gap -q lib.g proposition616.g
+gap -q -c 'nmin:=1;; nmax:=100;;' gap/lib.g gap/theorems.g
+gap -q gap/lib.g gap/proposition616.g
 ```
 
 To reproduce all the logs (4 parallel processes, a few hours):

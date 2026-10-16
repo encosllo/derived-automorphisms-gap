@@ -1,6 +1,6 @@
 # Common functions for the computations in
 #   L. Gong, Y. Yan, E. Cosme Llopez, "Derived automorphisms of finite groups".
-# Load this file before any of the other scripts:  gap -q lib.g <script>.g
+# Load this file before any of the other scripts:  gap -q gap/lib.g gap/<script>.g
 #
 # Notation (as in the paper):
 #   D(G)     derived norm: intersection of the normalizers N_G(H') , H <= G

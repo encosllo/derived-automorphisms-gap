@@ -10,8 +10,8 @@
 # "none" (no non-power candidates) or the number of candidates and how
 # many survive the test].
 #
-# Usage:  gap -q -c 'nmax:=120;;' lib.g synchronization.g
-#         gap -q -c 'GROUPS:=[[294,9]];;' lib.g synchronization.g
+# Usage:  gap -q -c 'nmax:=120;;' gap/lib.g gap/synchronization.g
+#         gap -q -c 'GROUPS:=[[294,9]];;' gap/lib.g gap/synchronization.g
 IsPowerOnA := function(A, f)
   local e, r;
   e := Exponent(A);

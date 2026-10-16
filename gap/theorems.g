@@ -14,7 +14,7 @@
 # It also lists the groups with DAut(G) = 1 (Table 1).
 #
 # A line "FAIL <tag> [n, i]" is printed for every failure (there are none).
-# Usage:  gap -q -c 'nmin:=1;; nmax:=100;; skip:=[];;' lib.g theorems.g
+# Usage:  gap -q -c 'nmin:=1;; nmax:=100;; skip:=[];;' gap/lib.g gap/theorems.g
 if not IsBound(skip) then skip := []; fi;
 ORDERS := Difference([nmin..nmax], skip);
 triv := []; bad := [];
