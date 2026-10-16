@@ -1,0 +1,9 @@
+DAut = 1: [ 192, 184 ] ((C2 x C2 x C2 x C2) : C3) : C4
+DAut = 1: [ 192, 185 ] ((C4 x C4) : C3) : C4
+DAut = 1: [ 192, 955 ] (((C2 x C2 x C2 x C2) : C2) : C3) : C2
+DAut = 1: [ 192, 956 ] (((C4 x C4) : C2) : C3) : C2
+DAut = 1: [ 192, 1021 ] (((C2 x Q8) : C2) : C2) : C3
+DAut = 1: [ 192, 1022 ] (Q8 x Q8) : C3
+DAut = 1: [ 192, 1024 ] (((C2 x C2 x C2 x C2) : C2) : C2) : C3
+candidates: 47
+FINAL

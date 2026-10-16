@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the article below and this software."
+title: "GAP code for \"Derived automorphisms of finite groups\""
+type: software
+authors:
+  - family-names: Gong
+    given-names: Lü
+    affiliation: "School of Mathematics and Statistics, Nantong University, China"
+  - family-names: Yan
+    given-names: Yan
+    affiliation: "School of Mathematics and Statistics, Nantong University, China"
+  - family-names: Cosme Llópez
+    given-names: Enric
+    affiliation: "Departament de Matemàtiques, Universitat de València, Spain"
+license: MIT
+repository-code: "https://github.com/encosllo/derived-automorphisms-gap"
+keywords:
+  - GAP
+  - finite groups
+  - automorphism
+  - derived automorphism
+  - derived norm
+  - power automorphism
+preferred-citation:
+  type: article
+  title: "Derived automorphisms of finite groups"
+  authors:
+    - family-names: Gong
+      given-names: Lü
+    - family-names: Yan
+      given-names: Yan
+    - family-names: Cosme Llópez
+      given-names: Enric

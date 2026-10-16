@@ -1,0 +1,37 @@
+[ 1, 1 ] 1 |DAut|=1 Z=1 G/G'=[  ] Z<=G'nPhi:true
+[ 2, 1 ] C2 |DAut|=1 Z=C2 G/G'=[ 2 ] Z<=G'nPhi:false
+[ 24, 12 ] S4 |DAut|=1 Z=1 G/G'=[ 2 ] Z<=G'nPhi:true
+[ 54, 8 ] ((C3 x C3) : C3) : C2 |DAut|=1 Z=C3 G/G'=[ 2 ] Z<=G'nPhi:true
+[ 60, 5 ] A5 |DAut|=1 Z=1 G/G'=[  ] Z<=G'nPhi:true
+[ 72, 40 ] (S3 x S3) : C2 |DAut|=1 Z=1 G/G'=[ 2, 2 ] Z<=G'nPhi:true
+[ 72, 41 ] (C3 x C3) : Q8 |DAut|=1 Z=1 G/G'=[ 2, 2 ] Z<=G'nPhi:true
+[ 96, 64 ] ((C4 x C4) : C3) : C2 |DAut|=1 Z=1 G/G'=[ 2 ] Z<=G'nPhi:true
+[ 96, 204 ] ((C2 x C2 x C2) : (C2 x C2)) : C3 |DAut|=1 Z=C2 G/G'=
+[ 3 ] Z<=G'nPhi:true
+[ 96, 227 ] ((C2 x C2 x C2 x C2) : C3) : C2 |DAut|=1 Z=1 G/G'=
+[ 2 ] Z<=G'nPhi:true
+[ 108, 15 ] ((C3 x C3) : C3) : C4 |DAut|=1 Z=C3 G/G'=[ 4 ] Z<=G'nPhi:true
+[ 120, 5 ] SL(2,5) |DAut|=1 Z=C2 G/G'=[  ] Z<=G'nPhi:true
+[ 120, 34 ] S5 |DAut|=1 Z=1 G/G'=[ 2 ] Z<=G'nPhi:true
+[ 120, 35 ] C2 x A5 |DAut|=1 Z=C2 G/G'=[ 2 ] Z<=G'nPhi:false
+[ 144, 182 ] (C3 x C3) : QD16 |DAut|=1 Z=1 G/G'=[ 2, 2 ] Z<=G'nPhi:true
+[ 150, 5 ] (C5 x C5) : S3 |DAut|=1 Z=1 G/G'=[ 2 ] Z<=G'nPhi:true
+[ 160, 234 ] ((C2 x C2 x C2 x C2) : C5) : C2 |DAut|=1 Z=1 G/G'=
+[ 2 ] Z<=G'nPhi:true
+[ 168, 42 ] PSL(3,2) |DAut|=1 Z=1 G/G'=[  ] Z<=G'nPhi:true
+[ 168, 43 ] (C2 x C2 x C2) : (C7 : C3) |DAut|=1 Z=1 G/G'=[ 3 ] Z<=G'nPhi:true
+[ 192, 184 ] ((C2 x C2 x C2 x C2) : C3) : C4 |DAut|=1 Z=1 G/G'=
+[ 4 ] Z<=G'nPhi:true
+[ 192, 185 ] ((C4 x C4) : C3) : C4 |DAut|=1 Z=1 G/G'=[ 4 ] Z<=G'nPhi:true
+[ 192, 955 ] (((C2 x C2 x C2 x C2) : C2) : C3) : C2 |DAut|=1 Z=1 G/G'=
+[ 2, 2 ] Z<=G'nPhi:true
+[ 192, 956 ] (((C4 x C4) : C2) : C3) : C2 |DAut|=1 Z=1 G/G'=
+[ 2, 2 ] Z<=G'nPhi:true
+[ 192, 1021 ] (((C2 x Q8) : C2) : C2) : C3 |DAut|=1 Z=C2 x C2 G/G'=
+[ 3 ] Z<=G'nPhi:true
+[ 192, 1022 ] (Q8 x Q8) : C3 |DAut|=1 Z=C2 x C2 G/G'=[ 3 ] Z<=G'nPhi:true
+[ 192, 1024 ] (((C2 x C2 x C2 x C2) : C2) : C2) : C3 |DAut|=1 Z=C2 x C2 G/G'=
+[ 3 ] Z<=G'nPhi:true
+[ 200, 43 ] (C5 x C5) : D8 |DAut|=1 Z=1 G/G'=[ 2, 2 ] Z<=G'nPhi:true
+[ 200, 44 ] (C5 x C5) : Q8 |DAut|=1 Z=1 G/G'=[ 2, 2 ] Z<=G'nPhi:true
+FINAL

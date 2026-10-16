@@ -1,0 +1,18 @@
+D10 n=2 |DAut|=100 |D|=50 DAut<=Inn:false
+D10 n=3 |DAut|=500 |D|=250 DAut<=Inn:false
+D14 n=2 |DAut|=294 |D|=98 DAut<=Inn:false
+D14 n=3 |DAut|=2058 |D|=686 DAut<=Inn:false
+D18 n=2 |DAut|=486 |D|=162 DAut<=Inn:false
+C7 : C3 n=2 |DAut|=294 |D|=147 DAut<=Inn:false
+C7 : C3 n=3 |DAut|=2058 |D|=1029 DAut<=Inn:false
+C5 : C4 n=2 |DAut|=100 |D|=100 DAut<=Inn:true
+C5 : C4 n=3 |DAut|=500 |D|=500 DAut<=Inn:true
+C11 : C5 n=2 |DAut|=1210 |D|=605 DAut<=Inn:false
+C13 : C3 n=2 |DAut|=2028 |D|=507 DAut<=Inn:false
+A4 n=2 |DAut|=16 |D|=16 DAut<=Inn:true
+A4 n=3 |DAut|=64 |D|=64 DAut<=Inn:true
+S3 n=1 |DAut|=6 |D|=6 DAut<=Inn:true
+S3 n=2 |DAut|=18 |D|=18 DAut<=Inn:true
+S3 n=3 |DAut|=54 |D|=54 DAut<=Inn:true
+S3 n=4 |DAut|=162 |D|=162 DAut<=Inn:true
+FINAL
